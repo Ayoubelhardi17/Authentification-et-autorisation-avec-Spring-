@@ -1,0 +1,74 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; background: #f3f5f9; color: #1c2430; }
+h1 { font-size: 1.6rem; margin: 0 0 .75rem; }
+h2 { font-size: 1.15rem; margin: 0 0 .75rem; }
+h3 { font-size: 1rem; margin: 1rem 0 .4rem; }
+a { color: #2457d6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+.muted { color: #6b7686; font-size: .9rem; }
+.pre { white-space: pre-wrap; }
+
+.navbar { display: flex; align-items: center; gap: 1.5rem; background: #14213d; color: #fff; padding: .6rem 1.2rem; flex-wrap: wrap; }
+.navbar .brand { font-weight: 700; }
+.navbar .links { display: flex; gap: 1rem; flex: 1; flex-wrap: wrap; }
+.navbar a { color: #cdd6ea; text-decoration: none; padding: .3rem .1rem; border-bottom: 2px solid transparent; }
+.navbar a.active { color: #fff; border-color: #fca311; }
+.navbar .user { display: flex; align-items: center; gap: .8rem; }
+
+.card { background: #fff; border-radius: 10px; padding: 1.2rem; margin-bottom: 1.2rem; box-shadow: 0 1px 3px rgba(20,33,61,.1); }
+.error-card { border-left: 5px solid #d62839; }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.2rem; }
+.page-head { display: flex; align-items: center; justify-content: space-between; }
+.form-narrow { max-width: 600px; }
+
+label { display: block; font-size: .9rem; font-weight: 600; margin-bottom: .8rem; }
+input, select, textarea { display: block; width: 100%; margin-top: .25rem; padding: .55rem .7rem; border: 1px solid #c5cddb; border-radius: 6px; font: inherit; background: #fff; }
+input:disabled { background: #eef0f4; }
+td select { width: auto; display: inline-block; margin: 0 0 0 .4rem; padding: .25rem; }
+textarea { margin-bottom: .6rem; }
+
+.btn { background: #2457d6; color: #fff; border: 0; padding: .6rem 1.1rem; border-radius: 6px; cursor: pointer; font: inherit; text-decoration: none; display: inline-block; }
+.btn:hover { background: #1b45ae; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn-light { background: #fff; color: #14213d; padding: .35rem .8rem; }
+.btn-light:hover { background: #e5e9f2; }
+.btn-small { padding: .25rem .6rem; font-size: .85rem; }
+
+.alert { padding: .6rem .9rem; border-radius: 6px; margin-bottom: 1rem; font-size: .92rem; }
+.alert-error { background: #fde8ea; color: #a0121f; }
+.alert-success { background: #e2f6e9; color: #146c2e; }
+.alert-warning { background: #fff3d6; color: #7a5200; }
+
+.auth-page { min-height: 100vh; display: grid; place-items: center; padding: 1rem; }
+.auth-card { width: 100%; max-width: 400px; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1rem; margin-bottom: 1.2rem; }
+.stat { text-align: center; margin: 0; }
+.stat-value { font-size: 2rem; font-weight: 700; color: #14213d; }
+.stat-label { color: #6b7686; font-size: .85rem; }
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+th, td { text-align: left; padding: .55rem .6rem; border-bottom: 1px solid #e4e8f0; vertical-align: middle; }
+th { color: #6b7686; font-weight: 600; }
+.actions { white-space: nowrap; }
+
+.badge { display: inline-block; padding: .1rem .55rem; border-radius: 999px; font-size: .75rem; font-weight: 600; background: #e4e8f0; }
+.st-OPEN { background: #dbe7ff; color: #1b45ae; }
+.st-ASSIGNED { background: #efe2ff; color: #5b21b6; }
+.st-IN_PROGRESS { background: #fff0cc; color: #8a5b00; }
+.st-RESOLVED { background: #dcf5e4; color: #146c2e; }
+.st-CLOSED { background: #dfe3ea; color: #475264; }
+.pr-LOW { background: #e4f3ea; color: #276749; }
+.pr-MEDIUM { background: #fff0cc; color: #8a5b00; }
+.pr-HIGH { background: #ffe0cc; color: #a8460a; }
+.pr-CRITICAL { background: #fde8ea; color: #a0121f; }
+.role-ADMIN { background: #fde8ea; color: #a0121f; }
+.role-TECHNICIAN { background: #efe2ff; color: #5b21b6; }
+.role-EMPLOYEE { background: #dbe7ff; color: #1b45ae; }
+
+.details { display: grid; grid-template-columns: 120px 1fr; gap: .4rem .8rem; margin: 0; }
+.details dt { color: #6b7686; }
+.details dd { margin: 0; }
+.timeline { list-style: none; margin: 0 0 1rem; padding: 0; }
+.timeline li { padding: .45rem 0 .45rem .9rem; border-left: 3px solid #c5cddb; margin-bottom: .3rem; }
